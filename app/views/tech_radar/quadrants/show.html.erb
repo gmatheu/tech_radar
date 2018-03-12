@@ -23,6 +23,7 @@
               &middot;
               <small>
                 <%= technology.purpose %>
+                <%= render partial: 'tech_radar/technologies/tags.html.erb', locals: {technology: technology} %>
               </small>
             </p>
           </li>

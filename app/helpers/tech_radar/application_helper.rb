@@ -10,6 +10,14 @@ module TechRadar
       end
     end
 
+    def label_color_for_tag(tag)
+      if tag == 'internal'
+        :info
+      else
+        :primary
+      end
+    end
+
     def panel_type_for_technology_why(technology)
       if technology.why_summary.blank? && warn_on_missing_why?(technology)
         :warning

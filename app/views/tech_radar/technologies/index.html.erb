@@ -16,6 +16,7 @@
           <small>
             <%= technology.purpose %>
             <span class="label label-<%= label_color_for_ring(technology.ring) %>"><%= technology.ring %></span>
+            <%= render partial: 'tech_radar/technologies/tags.html.erb', locals: {technology: technology} %>
           </small>
         </h1>
       </li>

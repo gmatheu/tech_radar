@@ -18,6 +18,9 @@
           <%= render_summary(@technology.more_details_summary) %>
         </p>
       <% end %>
+      <p>
+        <%= render partial: 'tech_radar/technologies/tags.html.erb', locals: {technology: @technology} %>
+      </p>
       <% if @technology.more_details_url.present? %>
         <p>
           <%= link_to t("tech_radar.radar.technologies.more_details_url.link"), @technology.more_details_url, class: "btn btn-default" %>

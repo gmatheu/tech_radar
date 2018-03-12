@@ -1,0 +1,8 @@
+<% unless technology.tags.empty? %>|<% end %>
+<% technology.tags.each do |tag| %>
+  <span class="label label-<%= label_color_for_tag(tag) %>"><%= tag %></span>
+<% end %>
+<% unless technology.experts.empty? %>|<% end %>
+<% technology.experts.each do |expert| %>
+  <a target="_blank" href="https://gitlab.ascentio.com.ar/<%= expert.name %>" class="expert">@<%= expert.name %></a>
+<% end %>

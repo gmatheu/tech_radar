@@ -22,6 +22,7 @@
                 <%= t("tech_radar.radar.quadrants.#{technology.quadrant}.title") %>
               </span>
             <% end %>
+            <%= render partial: 'tech_radar/technologies/tags.html.erb', locals: {technology: technology} %>
           </small>
         </p>
       </li>
